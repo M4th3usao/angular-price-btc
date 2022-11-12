@@ -7,6 +7,7 @@ import { HelloComponent } from './hello.component';
 import { HeaderComponent } from './header/header.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PriceBtcComponent } from './price-btc/price-btc.component';
+import { BitcoinService } from './bitcoin.service';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule],
@@ -17,5 +18,6 @@ import { PriceBtcComponent } from './price-btc/price-btc.component';
     PriceBtcComponent,
   ],
   bootstrap: [AppComponent],
+  providers: [BitcoinService],
 })
 export class AppModule {}

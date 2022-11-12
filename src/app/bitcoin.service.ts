@@ -4,7 +4,7 @@ import { intervalProvider } from 'rxjs/internal/scheduler/intervalProvider';
 
 interface Response {
   time: {
-    update: string;
+    updated: string;
   };
   disclamer: string;
   bpi: {
